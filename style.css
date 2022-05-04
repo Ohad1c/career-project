@@ -167,6 +167,7 @@ body {
 .procedure-section {
   margin: -80px 10px 50px 10px;
   position: relative;
+  overflow: hidden;
 }
 
 .procedure-section-top {
