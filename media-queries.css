@@ -1,0 +1,164 @@
+@media (min-width: 1200px) {
+
+  /* showcase section */
+  .section-showcase-inner .container {
+    max-width: 900px;
+  }
+
+  .container-9 {
+    max-width: 900px;
+  }
+
+  .container-16 {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  /* utilities */
+  .secondary-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  /* showcase section */
+  .showcase-section h1 {
+    font-size: 4rem;
+    margin-bottom: 100px;
+  }
+
+  /* procedure section */
+  .procedure-section .procedure-col:first-of-type {
+    padding-right: 105px;
+  }
+
+  .procedure-section .procedure-col:last-of-type {
+    padding-left: 105px;
+  }
+
+  .procedure-section .first-arrow {
+    height: 170px;
+    top: 40px;
+    right: -37px;
+  }
+
+  .procedure-section .second-arrow {
+    height: 93px;
+    top: 75px;
+    left: -35px;
+  }
+
+  /* contact section */
+  .contact-section-left {
+    grid-gap: 0;
+  }
+/*
+
+  .contact-section-left .btn {
+    max-width: 400px;
+    margin: auto;
+  }
+*/
+
+  /* about section */
+  .about-section {
+    font-size: 16px;
+  }
+
+
+
+}
+
+
+@media (max-width: 992px) {
+
+
+  /* navbar */
+  .navbar .navbar-brand {
+    font-size: 30px;
+  }
+
+  .navbar .navbar-nav .nav-item:last-child {
+    padding-left: 0;
+  }
+
+  /* showcase section */
+  .showcase-section h1 {
+    font-size: 38px;
+    margin-bottom: 100px;
+  }
+
+  .showcase-section .lead {
+    margin-bottom: 35px;
+    font-size: 16px;
+  }
+
+  .section-showcase-inner .btn {
+    font-size: 18px;
+  }
+
+  /* procedure section */
+  .about-section .secondary-title,
+  .contact-section-2 .secondary-title {
+    margin-bottom: 25px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .contact-section .row,
+  .contact-section-2 .row {
+    flex-direction: column-reverse;
+  }
+
+  .contact-section .secondary-title {
+    margin-top: 80px;
+  }
+
+  .contact-section-2 .secondary-title {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* utilities */
+  .btn {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .navbar .btn {
+    width: auto;
+  }
+
+  /* navbar */
+  .navbar {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /* showcase section */
+  .showcase-section {
+    clip-path: polygon(100% 100%, 50% 87%, 0 100%, 0 0, 100% 0);
+  }
+
+  .showcase-section h1 {
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+  }
+
+  .showcase-section h1 span {
+    display: inline;
+  }
+
+  /* procedure section */
+  .procedure-section .btn {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+}

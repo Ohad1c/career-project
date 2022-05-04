@@ -1,0 +1,253 @@
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #FAFAFA
+}
+
+/* utilities */
+.primary-color {
+  color: #963CFB;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bold-6 {
+  font-weight: 600;
+}
+
+.btn {
+  color: #fff;
+  background-color: #963CFB;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 26px;
+  font-family: 'Work Sans', sans-serif;
+  z-index: 500;
+}
+
+.btn:hover {
+  color: #EFE7FE;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.secondary-title {
+  text-align: center;
+  color: #0F0619;
+  font-size: 70px;
+}
+
+.secondary-title strong {
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+/* navbar */
+.navbar {
+  padding-right: 50px;
+  padding-left: 50px;
+  z-index: 500;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 50px;
+  color: #EFE7FE;
+  margin-right: 50px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar .navbar-nav {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-item {
+  padding-right: 30px;
+}
+
+.navbar ul li a {
+  color: #EFE7FE;
+  font-size: 18px;
+}
+
+.navbar .btn.bg-black {
+  font-size: 18px;
+}
+
+
+/* navbar button responsive */
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+.custom-toggler.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* showcase section */
+.showcase-section {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/image-3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #EFE7FE;
+  clip-path: polygon(100% 100%, 50% 93%, 0 100%, 0 0, 100% 0);
+  padding-bottom: 100px;
+}
+
+.section-showcase-inner {
+  text-align: center;
+  padding: 70px 20px 0px 20px;
+}
+
+.showcase-section h1 {
+  font-size: 116px;
+  margin-bottom: 100px;
+}
+
+.showcase-section h1 span {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.showcase-section .lead {
+  color: #b0a5a5;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 35px;
+  font-size: 34px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: light;
+}
+
+.showcase-section .lead span {
+  text-transform: uppercase;
+  color: white;
+}
+
+/* procedure section */
+.procedure-section {
+  margin: -80px 20px 100px 20px;
+  position: relative;
+}
+
+.procedure-section-top {
+  text-align: center;
+}
+
+.procedure-section .btn {
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+
+.procedure-section .procedure-col {
+  position: relative;
+}
+
+.procedure-section .procedure-col:first-of-type {
+  padding-right: 120px;
+  padding-left: 0;
+  padding-top: 50px;
+}
+
+.procedure-section .procedure-col:last-of-type {
+  padding-left: 120px;
+  padding-right: 0;
+  padding-top: 80px;
+}
+
+.procedure-section .first-arrow {
+  height: 200px;
+  position: absolute;
+  z-index: 10;
+  top: 70px;
+  right: -45px;
+}
+
+.procedure-section .second-arrow {
+  height: 110px;
+  position: absolute;
+  z-index: 10;
+  top: 117px;
+  left: -44px;
+}
+
+.procedure-section .procedure-col p {
+  font-size: 24px;
+  color: #0F0619;
+  margin-top: 50px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.procedure-slider {
+  text-align: center;
+  font-size: 16px;
+}
+
+.procedure-slider .slick-dots li button:before {
+  font-size: 23px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #963CFB !important;
+}
+
+/* contact section */
+.contact-section {
+  background-color: #ECECEC;
+}
+
+.contact-section-left {
+  display: grid;
+  grid-gap: 80px;
+}
+
+.contact-section-left .btn {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* about section */
+.about-section {
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #F6F6F6;
+}
+
+.about-section .secondary-title {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+/* contact section 2 */
+.contact-section-2 {}
+
+.contact-section-2 .secondary-title {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.contact-section-2 p {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.contact-section-2 .btn {
+  margin-top: 20px;
+}
