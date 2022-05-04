@@ -65,7 +65,6 @@ body {
   background-position: center;
   background-size: cover;
   background-position-y: 50px;
-  overflow: hidden;
 }
 
 .clouds-white-img {
@@ -76,7 +75,6 @@ body {
   background-position: center;
   background-size: cover;
   background-position-y: 70px;
-  overflow: hidden;
 }
 
 /* navbar */
@@ -169,7 +167,6 @@ body {
 .procedure-section {
   margin: -80px 10px 50px 10px;
   position: relative;
-  overflow: hidden;
 }
 
 .procedure-section-top {
@@ -224,6 +221,7 @@ body {
 .procedure-slider {
   text-align: center;
   font-size: 16px;
+  overflow: hidden;
 }
 
 .procedure-slider .slick-dots li button:before {
