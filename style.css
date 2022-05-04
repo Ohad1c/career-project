@@ -167,6 +167,7 @@ body {
 .procedure-section {
   margin: -80px 10px 50px 10px;
   position: relative;
+  overflow: hidden;
 }
 
 .procedure-section-top {
@@ -221,8 +222,6 @@ body {
 .procedure-slider {
   text-align: center;
   font-size: 16px;
-  overflow-x: hidden;
-   
 }
 
 .procedure-slider .slick-dots li button:before {
