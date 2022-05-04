@@ -130,12 +130,12 @@ body {
   background-repeat: no-repeat;
   color: #EFE7FE;
   clip-path: polygon(100% 100%, 50% 93%, 0 100%, 0 0, 100% 0);
-  padding-bottom: 100px;
+  padding-bottom: 180px;
 }
 
 .section-showcase-inner {
   text-align: center;
-  padding: 70px 20px 0px 20px;
+  padding-top: 130px;
 }
 
 .showcase-section h1 {
@@ -165,7 +165,7 @@ body {
 
 /* procedure section */
 .procedure-section {
-  margin: -80px 20px 50px 20px;
+  margin: -80px 10px 50px 10px;
   position: relative;
 }
 
@@ -210,7 +210,8 @@ body {
   left: -44px;
 }
 
-.procedure-section .procedure-col p {
+.procedure-section .procedure-col p,
+.procedure-slider p {
   font-size: 24px;
   color: #0F0619;
   margin-top: 50px;
@@ -248,15 +249,20 @@ body {
 /* about section */
 .about-section {
   font-size: 24px;
-  font-family: 'Work Sans', sans-serif;
   background-color: #F6F6F6;
   clip-path: polygon(100% 100%, 50% 93%, 0 100%, 0 0, 100% 0);
   padding-bottom: 100px;
+  padding-right: 9px;
+  padding-left: 9px;
 }
 
 .about-section .secondary-title {
   text-align: left;
   margin-bottom: 50px;
+}
+
+.about-section p {
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* contact section 2 */

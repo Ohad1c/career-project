@@ -9,7 +9,7 @@
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Playfair+Display:wght@400;600;900&family=Work+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Playfair+Display:wght@400;600;900&family=Work+Sans:ital,wght@0,200;0,400;0,700;1,900&display=swap" rel="stylesheet">
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media-queries.css">
@@ -99,17 +99,17 @@
 
     <!-- procedure pictures mobile slider -->
     <div class="procedure-slider d-lg-none">
-      <div class="procedure-slider-slide">
+      <div class="procedure-slider-slide pr-3">
         <img src="img/slide-img.png" alt="" class="img-fluid mx-auto">
-        <p class="mt-5">The process is entirely digital and can take from several minutes up to an hour, depending how thorough you want it to be.</p>
+        <p class="mt-5 mb-4">The process is entirely digital and can take from several minutes up to an hour, depending how thorough you want it to be.</p>
       </div>
-      <div class="procedure-slider-slide">
+      <div class="procedure-slider-slide pr-3">
         <img src="img/slide-img.png" alt="" class="img-fluid mx-auto">
-        <p class="mt-5">The process is entirely digital and can take from several minutes up to an hour, depending how thorough you want it to be.</p>
+        <p class="mt-5 mb-4">Our algorithms will calculate how hundreds of occupations fit you, and will help you find all the information you need to make better career choices.</p>
       </div>
-      <div class="procedure-slider-slide">
+      <div class="procedure-slider-slide pr-3">
         <img src="img/slide-img.png" alt="" class="img-fluid mx-auto">
-        <p class="mt-5">The process is entirely digital and can take from several minutes up to an hour, depending how thorough you want it to be.</p>
+        <p class="mt-5 mb-4">The process is entirely digital and can take from several minutes up to an hour, depending how thorough you want it to be.</p>
       </div>
     </div>
   </section>
@@ -180,11 +180,18 @@
       dots: true,
       infinite: true,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '15px',
     });
-
+    //    $('.procedure-slider').slick({
+    //      dots: true,
+    //      infinite: true,
+    //      speed: 300,
+    //      slidesToShow: 1,
+    //      centerMode: true,
+    //      variableWidth: true
+    //    });
   </script>
 
-</body>
-
-</html>
+</body></html>

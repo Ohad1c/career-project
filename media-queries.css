@@ -25,7 +25,8 @@
   /* utilities */
   .secondary-title {
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+    line-height: 40px;
   }
 
   /* showcase section */
@@ -99,6 +100,9 @@
   .showcase-section .lead {
     margin-bottom: 35px;
     font-size: 16px;
+    letter-spacing: 1px;
+    padding-right: 11px;
+    padding-left: 11px;
   }
 
   .section-showcase-inner .btn {
@@ -148,14 +152,15 @@
     padding-right: 20px;
     padding-left: 20px;
   }
-  
+
   .navbar .btn {
     padding: 10px 30px;
   }
 
   /* showcase section */
   .showcase-section {
-    clip-path: polygon(100% 100%, 50% 87%, 0 100%, 0 0, 100% 0);
+    clip-path: polygon(100% 100%, 50% 88%, 0 100%, 0 0, 100% 0);
+    background-position: right;
   }
 
   .showcase-section h1 {
@@ -170,14 +175,36 @@
   /* procedure section */
   .procedure-section .btn {
     font-size: 18px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+  }
+
+  .procedure-slider p {
+    font-size: 16px;
+    padding-right: 13px;
+    padding-left: 12px;
   }
 
   /* contact section */
   .clouds-dark-img {
     height: 58px;
-/*    background-size: contain;*/
+    /*    background-size: contain;*/
     background-position: bottom;
     background-position-y: 26px;
+  }
+  
+  .contact-section {
+    padding-top: 70px;
+  }
+
+  /* about section */
+  .about-section {
+    padding-bottom: 160px;
+  }
+
+  /* contact section 2 */
+  .contact-section-2 {
+    margin-top: -158px;
+    padding-right: 9px;
+    padding-left: 9px;
   }
 }
