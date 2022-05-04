@@ -60,7 +60,7 @@ body {
   height: 190px;
   width: 100%;
   background-color: #f7f7f7;
-  background-image: url("img/clouds-2.jpeg");
+  background-image: url("img/Intersection-11.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -70,11 +70,11 @@ body {
 .clouds-white-img {
   height: 190px;
   width: 100%;
-  background-image: url("img/clouds-1.jpeg");
+  background-image: url("img/Intersection-12.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-position-y: 50px;
+  background-position-y: 70px;
 }
 
 /* navbar */

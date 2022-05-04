@@ -112,7 +112,7 @@
   /* procedure section */
   .about-section .secondary-title,
   .contact-section-2 .secondary-title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
 }
@@ -145,6 +145,12 @@
 
   .navbar .btn {
     width: auto;
+  }
+
+  .clouds-white-img {
+    height: 59px;
+    background-size: contain;
+    background-position-y: 30px;
   }
 
   /* navbar */
@@ -191,7 +197,7 @@
     background-position: bottom;
     background-position-y: 26px;
   }
-  
+
   .contact-section {
     padding-top: 70px;
   }
@@ -207,4 +213,6 @@
     padding-right: 9px;
     padding-left: 9px;
   }
+
+
 }
