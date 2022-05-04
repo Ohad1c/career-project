@@ -1,3 +1,9 @@
+@media (max-width: 1400px) {
+  .clouds-dark-img {
+    height: 150px;
+  }
+}
+
 @media (min-width: 1200px) {
 
   /* showcase section */
@@ -53,7 +59,8 @@
   .contact-section-left {
     grid-gap: 0;
   }
-/*
+
+  /*
 
   .contact-section-left .btn {
     max-width: 400px;
@@ -160,5 +167,13 @@
   .procedure-section .btn {
     font-size: 18px;
     margin-bottom: 50px;
+  }
+
+  /* contact section */
+  .clouds-dark-img {
+    height: 58px;
+    background-size: contain;
+    background-position: bottom;
+    background-position-y: 18px;
   }
 }

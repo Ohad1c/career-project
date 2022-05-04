@@ -56,6 +56,28 @@ body {
   margin-bottom: 100px;
 }
 
+.clouds-dark-img {
+  height: 190px;
+  width: 100%;
+  background-color: #f7f7f7;
+  background-image: url("img/clouds-2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 50px;
+}
+
+.clouds-white-img {
+  height: 190px;
+  width: 100%;
+  background-color: #f7f7f7;
+  background-image: url("img/clouds-1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 50px;
+}
+
 /* navbar */
 .navbar {
   padding-right: 50px;
@@ -144,7 +166,7 @@ body {
 
 /* procedure section */
 .procedure-section {
-  margin: -80px 20px 100px 20px;
+  margin: -80px 20px 50px 20px;
   position: relative;
 }
 
@@ -229,6 +251,8 @@ body {
   font-size: 24px;
   font-family: 'Work Sans', sans-serif;
   background-color: #F6F6F6;
+  clip-path: polygon(100% 100%, 50% 93%, 0 100%, 0 0, 100% 0);
+  padding-bottom: 100px;
 }
 
 .about-section .secondary-title {
@@ -237,7 +261,9 @@ body {
 }
 
 /* contact section 2 */
-.contact-section-2 {}
+.contact-section-2 {
+  margin-top: -110px;
+}
 
 .contact-section-2 .secondary-title {
   text-align: left;
