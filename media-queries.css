@@ -176,8 +176,8 @@
   /* contact section */
   .clouds-dark-img {
     height: 58px;
-    background-size: contain;
+/*    background-size: contain;*/
     background-position: bottom;
-    background-position-y: 18px;
+    background-position-y: 26px;
   }
 }
