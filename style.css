@@ -221,7 +221,8 @@ body {
 .procedure-slider {
   text-align: center;
   font-size: 16px;
-  overflow: hidden;
+  overflow-x: hidden;
+   
 }
 
 .procedure-slider .slick-dots li button:before {
