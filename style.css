@@ -26,7 +26,7 @@ body {
   color: #fff;
   background-color: #963CFB;
   border: none;
-  border-radius: 30px;
+  border-radius: 50px;
   padding: 10px 30px;
   font-size: 26px;
   font-family: 'Work Sans', sans-serif;
@@ -349,7 +349,7 @@ body {
 
 .footer hr {
   background-color: white;
-/*  width: 97%;*/
+  /*  width: 97%;*/
   margin: auto;
   margin-top: -20px;
 }

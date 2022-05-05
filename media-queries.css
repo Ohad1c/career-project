@@ -148,7 +148,7 @@
 
   /* utilities */
   .btn {
-    width: 100%;
+    max-width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 18px;
@@ -230,6 +230,10 @@
   }
 
   /* footer */
+  .footer {
+    clip-path: polygon(50% 0, 100% 3%, 100% 100%, 0 100%, 0 3%);
+  }
+
   .footer .ul-container {
     grid-template-columns: 1fr;
   }
