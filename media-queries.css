@@ -31,6 +31,17 @@
   .footer .footer-top > div:nth-child(4) {
     padding-left: 90px;
   }
+
+  /***** skills test pages *****/
+  .skills-section .form-container {
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .border-left-lg-1 {
+    border-left: 1px solid #C6C6C6;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -92,7 +103,7 @@
 
 @media (max-width: 992px) {
 
-
+  /***** home page  *****/
   /* navbar */
   .navbar .navbar-brand {
     font-size: 30px;
@@ -125,6 +136,27 @@
   .contact-section-2 .secondary-title {
     margin-bottom: 20px;
   }
+
+  /***** home page  *****/
+  .skills-section .instructions,
+  .skills-section .accordion h2 button,
+  .skills-section .accordion label,
+  .skills-section .btn {
+    font-size: 16px;
+  }
+
+
+  .accordion .card-header button::after {
+    top: 22px;
+  }
+
+  .score-mobile {
+    padding-left: 30px;
+    display: inline-block;
+    padding-top: 8px;
+    font-weight: 600;
+  }
+
 
 }
 

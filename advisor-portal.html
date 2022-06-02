@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Playfair+Display:wght@400;600;900&family=Work+Sans:ital,wght@0,200;0,400;0,700;1,900&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media-queries.css">
+
+  <title>advisor portal</title>
+</head>
+
+<body>
+  <main>
+    <!-- skills test section -->
+    <section class="skills-section">
+      <div class="container container-17">
+        <div class="row">
+          <div class="col-12 col-xl-8 form-container">
+            <p class="instructions mb-4">Hi! Please rate your skills to find your suggested occupation. You may rate as many skills as you'd like.</p>
+            <form id="skills-advice-form">
+              <div class="accordion" id="skillsAccordion">
+                <div class="card mb-xl-2">
+                  <div class="card-header"  id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Physical Abilities
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#skillsAccordion">
+                    <div class="card-body p-2 pb-5 p-xl-5">
+                      <div class="form-group">
+                        <div>
+                          <label for="range-control-1">
+                            Getting Information
+                            <i class="fa-solid fa-circle-info ml-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
+                          </label>
+                          <span class="d-none d-lg-block">Very poor</span>
+                        </div>
+                        <input type="range" class="form-control-range" id="range-control-1">
+                        <span class="d-lg-none score score-mobile">Very poor</span>
+                      </div>
+                      <div class="form-group">
+                        <div>
+                          <label for="range-control-2">
+                            Monitor Processes Materials Or Surroundings
+                          </label>
+                          <span class="d-none d-lg-block">Below average</span>
+                        </div>
+                        <input type="range" class="form-control-range" id="range-control-2">
+                        <span class="d-lg-none score score-mobile">Below average</span>
+                      </div>
+                      <div class="form-group">
+                        <div>
+                          <label for="range-control-3">
+                            Identifying Objects Actions And Events
+                          </label>
+                          <span class="d-none d-lg-block">Acceptable</span>
+                        </div>
+                        <span class="d-lg-none score score-mobile">Acceptable</span><input type="range" class="form-control-range" id="range-control-3">
+
+                      </div>
+                      <div class="form-group">
+                        <div>
+                          <label for="range-control-4">
+                            Inspecting Equipment Structures Or Material
+                          </label>
+                          <span class="d-none d-lg-block">Good</span>
+                          <span class="d-lg-none score score-mobile">Good</span>
+                        </div>
+                        <input type="range" class="form-control-range" id="range-control-4">
+
+                      </div>
+                      <div class="form-group">
+                        <div>
+                          <label for="range-control-5">
+                            Estimating The Quantifiable Characteristics Of Products Events Or Information
+                          </label>
+                          <span class="d-lg-none score score-mobile">Very poor</span> <span class="d-none d-lg-block">Very good</span>
+                        </div>
+                        <input type="range" class="form-control-range" id="range-control-5">
+
+                      </div>
+                      <div class="form-group">
+                        <span class="d-lg-none score score-mobile">Very good</span><label for="range-control-6">
+                          Judging The Qualities Of Things Services Or People
+                        </label>
+                        <input type="range" class="form-control-range" id="range-control-6">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-xl-2">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Technical Skills
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#skillsAccordion">
+                    <div class="card-body">
+                      Some placeholder content for the second accordion panel. This panel is hidden by default.
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-xl-2">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Another Abilities here
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#skillsAccordion">
+                    <div class="card-body">
+                      And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-xl-2">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Technical Skills
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#skillsAccordion">
+                    <div class="card-body">
+                      And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-xl-2">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Technical Skills
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#skillsAccordion">
+                    <div class="card-body">
+                      And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn my-4 d-none d-xl-block">Submit</button>
+
+              <button type="submit" class="btn my-4 d-xl-none d-block w-75 mx-auto" id="submit-button-mobile" data-toggle="modal" data-target="#resultsModal">Submit</button>
+
+
+            </form>
+          </div>
+          <div class="d-none d-xl-block col-xl-4 border-left-lg-1 skills-section__right">
+
+            <div class="occupations-container px-2">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search occupation" aria-label="Search occupation">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="pl-2">
+                <h3 class="pt-4 mb-4">Occupations</h3>
+                <ul class="pl-0">
+                  <li class="d-flex justify-content-between">
+                    <div>
+                      <span class="bold mr-3">95%</span>Fallers
+                      <i class="fa-solid fa-circle-info ml-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
+                    </div>
+                    <i class="fa-solid fa-heart "></i>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <div>
+                      <span class="bold mr-3">94%</span>Timing Device Assembler
+                      <i class="fa-solid fa-circle-info ml-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <div>
+                      <span class="bold mr-3">95%</span>Adjusters
+                      <i class="fa-solid fa-circle-info ml-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <div>
+                      <span class="bold mr-3">95%</span>Equipment Assemblers
+                      <i class="fa-solid fa-circle-info ml-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <div>
+                      <span class="bold mr-3">95%</span>Wind Turbine Service Technicians
+                      <i class="fa-solid fa-circle-info ml-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <div>
+                      <span class="bold mr-3">95%</span>Solar Photovoltaic Installers
+                      <i class="fa-solid fa-circle-info ml-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="contact-us">
+              <div class="position-relative">
+                <p class="mb-4"><span class="d-block">You can only rank 12 criteria without paying.</span> We recommend that you <a href="">contact a career consultant</a></p>
+                <img src="img/robot.png" alt="contact us">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="resultsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header pb-0">
+              <!--              <h5 class="modal-title" id="resultsModalLabel">Modal title</h5>-->
+              <button type="button" class="close pb-0" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer mt-4">
+              <button type="button" class="btn w-100" data-dismiss="modal">RETURN TO RATING</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- footer -->
+  <!--
+  <footer class="footer">
+    <div class="container container-17">
+      <div class="row footer-top">
+        <div class="col-xl-4 col-md-6">
+          <span class="footer-list-title">Popular Features</span>
+          <div class="ul-container">
+            <ul class="footer-popular-features">
+              <li></li>
+              <li><a href="">Free Meeting Scheduler App</a></li>
+              <li><a href="">Social Media Tools</a></li>
+              <li><a href="">Email Tracking Software</a></li>
+              <li><a href="">Sales Email Automation</a></li>
+              <li><a href="">Ads Software</a></li>
+              <li><a href="">Email Marketing Software</a></li>
+              <li><a href="">Lead Management Software</a></li>
+              <li><a href="">Pipeline Management Tools</a></li>
+            </ul>
+            <ul>
+              <li><a href="">Sales Email Templates</a></li>
+              <li><a href="">Help Desk Software</a></li>
+              <li><a href="">Free Online Form Builder</a></li>
+              <li><a href="">Free Chatbot Builder</a></li>
+              <li><a href="">Free Live Chat Software</a></li>
+              <li><a href="">Marketing Analytics</a></li>
+              <li><a href="">Free Landing Page Builder</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <ul>
+            <li><span class="footer-list-title">Free Tools</span></li>
+            <li><a href="">Website Grader</a></li>
+            <li><a href="">Make My Persona</a></li>
+            <li><a href="">Email Signature Generator</a></li>
+            <li><a href="">Blog Ideas Generator</a></li>
+            <li><a href="">Invoice Template Generator</a></li>
+            <li><a href="">Marketing Plan Generator</a></li>
+            <li><a href="">Free Business Templates</a></li>
+            <li><a href="">Industry Benchmark Data</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-md-6">
+          <ul>
+            <li><span class="footer-list-title">Company</span></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Management Team</a></li>
+            <li><a href="">Board of Directors</a></li>
+            <li><a href="">Investor Relations</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <ul>
+            <li><span class="footer-list-title">Customers</span></li>
+            <li><a href="">Customer Support</a></li>
+            <li><a href="">Join a Local User Group</a></li>
+          </ul>
+          <ul class="footer-partners">
+            <li><span class="footer-list-title">Partners</span></li>
+            <li><a href="">Partners All Partner Programs</a></li>
+            <li><a href="">Solutions Partner Program</a></li>
+            <li><a href="">App Partner Program</a></li>
+            <li><a href="">HubSpot for Startups</a></li>
+            <li><a href="">Affiliate Program</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-media">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <hr>
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="">
+      </div>
+    </div>
+  </footer>
+-->
+
+
+  <!--  Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    // initialize tooltips
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // prevent page refresh on form submit
+    $("#skills-advice-form").submit(function(e) {
+      e.preventDefault();
+    });
+
+    // inject result inside modal
+    $("#submit-button-mobile").click(function() {
+      const results = $(".occupations-container");
+      $(".modal-body").html(results);
+    });
+
+  </script>
+</body>
+
+</html>
