@@ -150,12 +150,14 @@
     top: 22px;
   }
 
+/*
   .score-mobile {
     padding-left: 30px;
     display: inline-block;
     padding-top: 8px;
     font-weight: 600;
   }
+*/
 }
 
 @media (max-width: 768px) {
