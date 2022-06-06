@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +21,14 @@
 </head>
 
 <body>
- <header>
-   <nav class="navbar navbar-expand-lg">
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#"><span class="primary-color">Paths.</span>Careers</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon custom-toggler"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -38,7 +41,7 @@
             <a class="nav-link" href="#">Help</a>
           </li>
         </ul>
-        <a href="advisor-portal.html" class="mr-auto">
+        <a href="advisor-portal.html" class="me-auto">
           <button type="button" class="btn bg-black">Advisor portal</button>
         </a>
         <ul class="navbar-nav">
@@ -51,7 +54,7 @@
         </a>
       </div>
     </nav>
- </header>
+  </header>
   <main>
     <!-- skills test section -->
     <section class="skills-section">
@@ -59,56 +62,49 @@
         <div class="row">
           <div class="col-12 col-xl-8 form-container">
             <p class="instructions mb-4">Hi! Please rate your skills to find your suggested occupation. You may rate as many skills as you'd like.</p>
-            <form id="skills-advice-form">
+            <form id="skills-advice-form" class="mb-5 pb-lg-5">
               <div class="accordion" id="skillsAccordion">
-                <div class="card mb-xl-2">
-                  <div class="card-header"  id="headingOne">
+                <!-- accordion item 1 -->
+                <div class="accordion-item mb-xl-2">
+                  <div class="accordion-header" id="headingOne">
                     <h2 class="mb-0">
-                      <button class="btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <button class="accordion-button btn-block text-left" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Physical Abilities
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#skillsAccordion">
-                    <div class="card-body p-2 pb-5 p-xl-5">
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body p-2 pb-5 p-xl-5 mb-">
                       <div class="form-group">
                         <div>
                           <label for="range-control-1">
                             Getting Information
                             <i class="fa-solid fa-circle-info ml-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
                           </label>
-                          <span class="d-none d-lg-block">Very poor</span>
                         </div>
-                        <input type="range" class="form-control-range" id="range-control-1">
-                        <span class="d-lg-none score score-mobile">Very poor</span>
+                        <input type="range" class="form-control-range" name="range1" min="0" max="5" value="0" id="range-control-1">
+                        <output for="range1" id="rangeOutput1"></output>
                       </div>
                       <div class="form-group">
                         <div>
                           <label for="range-control-2">
                             Monitor Processes Materials Or Surroundings
                           </label>
-                          <span class="d-none d-lg-block">Below average</span>
                         </div>
                         <input type="range" class="form-control-range" id="range-control-2">
-                        <span class="d-lg-none score score-mobile">Below average</span>
                       </div>
                       <div class="form-group">
                         <div>
                           <label for="range-control-3">
                             Identifying Objects Actions And Events
                           </label>
-                          <span class="d-none d-lg-block">Acceptable</span>
                         </div>
-                        <span class="d-lg-none score score-mobile">Acceptable</span><input type="range" class="form-control-range" id="range-control-3">
-
                       </div>
                       <div class="form-group">
                         <div>
                           <label for="range-control-4">
                             Inspecting Equipment Structures Or Material
                           </label>
-                          <span class="d-none d-lg-block">Good</span>
-                          <span class="d-lg-none score score-mobile">Good</span>
                         </div>
                         <input type="range" class="form-control-range" id="range-control-4">
 
@@ -118,13 +114,12 @@
                           <label for="range-control-5">
                             Estimating The Quantifiable Characteristics Of Products Events Or Information
                           </label>
-                          <span class="d-lg-none score score-mobile">Very poor</span> <span class="d-none d-lg-block">Very good</span>
                         </div>
                         <input type="range" class="form-control-range" id="range-control-5">
 
                       </div>
                       <div class="form-group">
-                        <span class="d-lg-none score score-mobile">Very good</span><label for="range-control-6">
+                        <label for="range-control-6">
                           Judging The Qualities Of Things Services Or People
                         </label>
                         <input type="range" class="form-control-range" id="range-control-6">
@@ -133,62 +128,68 @@
                     </div>
                   </div>
                 </div>
-                <div class="card mb-xl-2">
-                  <div class="card-header" id="headingTwo">
+                <!-- accordion item 2 -->
+                <div class="accordion-item mb-xl-2">
+                  <div class="accordion-header" id="headingTwo">
                     <h2 class="mb-0">
-                      <button class="btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <button class="accordion-button btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Technical Skills
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#skillsAccordion">
-                    <div class="card-body">
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
                       Some placeholder content for the second accordion panel. This panel is hidden by default.
                     </div>
                   </div>
                 </div>
-                <div class="card mb-xl-2">
-                  <div class="card-header" id="headingThree">
+                <!-- accordion item 3 -->
+                <div class="accordion-item mb-xl-2">
+                  <div class="accordion-header" id="headingThree">
                     <h2 class="mb-0">
-                      <button class="btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <button class="accordion-button btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Another Abilities here
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#skillsAccordion">
-                    <div class="card-body">
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
                       And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                     </div>
                   </div>
                 </div>
-                <div class="card mb-xl-2">
-                  <div class="card-header" id="headingThree">
+                <!-- accordion item 4 -->
+                <div class="accordion-item mb-xl-2">
+                  <div class="accordion-header" id="headingFour">
                     <h2 class="mb-0">
-                      <button class="btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <button class="accordion-button btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         Technical Skills
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#skillsAccordion">
-                    <div class="card-body">
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
                       And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                     </div>
                   </div>
                 </div>
-                <div class="card mb-xl-2">
-                  <div class="card-header" id="headingThree">
+
+                <!-- accordion item 5 -->
+                <div class="accordion-item mb-xl-2">
+                  <div class="accordion-header" id="headingFive">
                     <h2 class="mb-0">
-                      <button class="btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <button class="accordion-button btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         Technical Skills
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#skillsAccordion">
-                    <div class="card-body">
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
                       And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                     </div>
                   </div>
                 </div>
+
               </div>
               <button type="submit" class="btn my-4 d-none d-xl-block">Submit</button>
 
@@ -260,6 +261,11 @@
               </div>
             </div>
 
+
+            <div class="spacer" style="height: 100px">
+
+            </div>
+
           </div>
         </div>
       </div>
@@ -270,7 +276,6 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header pb-0">
-              <!--              <h5 class="modal-title" id="resultsModalLabel">Modal title</h5>-->
               <button type="button" class="close pb-0" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -287,10 +292,8 @@
   </main>
 
 
-
   <!-- footer -->
-  
-  <footer class="footer">
+  <footer class="footer mt-negative-5">
     <div class="container container-17">
       <div class="row footer-top">
         <div class="col-xl-4 col-md-6">
@@ -374,11 +377,9 @@
   </footer>
 
 
-
   <!--  Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
 
   <script type="text/javascript">
     // initialize tooltips
@@ -396,8 +397,6 @@
       const results = $(".occupations-container");
       $(".modal-body").html(results);
     });
-
   </script>
-</body>
 
-</html>
+</body></html>
