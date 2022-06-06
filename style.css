@@ -710,19 +710,9 @@ header .navbar ul li a {
   }
 }
 
-.skills-section .form-container {
-  padding-top: 60px;
-}
-
 @media (min-width: 1200px) {
   .skills-section .form-container {
     padding-right: 100px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .skills-section .form-container {
-    padding-top: 20px;
   }
 }
 
@@ -733,7 +723,6 @@ header .navbar ul li a {
 }
 
 @media (max-width: 992px) {
-
   .skills-section .instructions,
   .skills-section .accordion h2 button,
   .skills-section .accordion label,
@@ -756,7 +745,6 @@ header .navbar ul li a {
   border: 1px solid #D2D2D2;
   border-radius: 10px;
   margin-bottom: 0;
-
 }
 
 .skills-section .accordion h2 button {
