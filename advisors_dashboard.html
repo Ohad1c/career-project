@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Playfair+Display:wght@400;600;900&family=Work+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;1,900&display=swap" rel="stylesheet" />
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css" />
+	<title>Advisors dashboard search</title>
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand" href="index.html"><span class="primary-color">Paths.</span>Careers</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon custom-toggler"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">How it works</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Behind the hood</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Help</a>
+					</li>
+				</ul>
+				<a href="advisor-portal.html" class="me-auto">
+					<button type="button" class="btn bg-black">Advisor portal</button>
+				</a>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link text-initial" href="#">Sign out</a>
+					</li>
+				</ul>
+				<a href="">
+					<button type="button" class="btn">Get Started</button>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<!-- advisors dashboard section -->
+	<section class="advisors-dashboard-section">
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-2 col-xl-2 px-0 pt-0 py-xl-5 side-menu">
+					<div class="">
+						<p class="menu-title ps-4 mb-4 d-none d-xl-block">Menu</p>
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<button class="nav-link active mb-2 pt-4 px-0 pb-0 ps-xl-4 py-xl-4
+						align-self-center align-self-xl-start" id="v-pills-clients-tab" data-bs-toggle="pill" data-bs-target="#v-pills-clients" type="button" role="tab" aria-controls="v-pills-clients" aria-selected="true">
+								<i class="fa-solid fa-user-group"></i>
+								<span class="d-none d-xl-block">My Clients</span>
+							</button>
+							<button class="nav-link mb-2 pt-4 px-0 pb-0 ps-xl-4 py-xl-4 align-self-center align-self-xl-start" id="v-pills-plan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-plan" type="button" role="tab" aria-controls="v-pills-plan" aria-selected="false">
+								<i class="fa-solid fa-wallet"></i>
+								<span class="d-none d-xl-block">My Plan</span>
+							</button>
+							<button class="nav-link pt-4 px-0 pb-0 ps-xl-4 py-xl-4 align-self-center align-self-xl-start" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+								<i class="fa-solid fa-gear"></i>
+								<span class="d-none d-xl-block">My Profile</span>
+							</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-10 col-xl-10 py-5 tabs-content-container">
+					<div class="tab-content" id="v-pills-tabContent">
+						<!-- my clients tab -->
+						<div class="tab-pane fade show active" id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-clients-tab">
+							<!-- top tab menu -->
+							<ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button class="nav-link active" id="pills-clients-list-tab" data-bs-toggle="pill" data-bs-target="#pills-clients-list" type="button" role="tab" aria-controls="pills-clients-list" aria-selected="true">Client List</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="pills-add-client-tab" data-bs-toggle="pill" data-bs-target="#pills-add-client" type="button" role="tab" aria-controls="pills-add-client" aria-selected="false">Add a New Client</button>
+								</li>
+							</ul>
+							<!-- my clients list content -->
+							<div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="pills-clients-list" role="tabpanel" aria-labelledby="pills-clients-list-tab">
+									<div class="container container-12 px-0 px-lg-2">
+										<h2 class="my-5 d-none d-md-block">My Clients</h2>
+										<div class="my-clients-container">
+											<!-- clients 1 -->
+											<div class="client p-2 p-lg-4 mb-2 mb-lg-3">
+												<div class="row">
+													<div class="col-12 col-xl-9 d-flex">
+														<img src="img/advisor.png" alt="client" class="client-img rounded-circle pe-2 pe-lg-4">
+														<div class="client-content">
+															<h3 class="client-title">Esther Howard</h3>
+															<div class="client-meta  d-xl-flex">
+																<div class="client-meta-email pe-xxl-4 mb-1 mb-xl-0"><i class="fa-solid fa-envelope me-2"></i>mail.address@theserver.com</div>
+																<div class="client-meta-phone ps-xl-3 pe-xxl-4 mb-1 mb-xl-0"><i class="fa-solid fa-phone me-1"></i>098-7654321</div>
+																<div class="client-meta-location ps-xl-3 pe-xxl-4 mb-1 mb-xl-0"><i class="fa-solid fa-location-dot me-1"></i>Los Angeles</div>
+																<div class="client-meta-language ps-xl-3"><i class="fa-solid fa-earth-europe me-1"></i>ENG</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-12 col-xl-3 text-xl-end align-self-center mt-2 mt-sm-4 mt-xl-0">
+														<a href="#" class="btn-2">View Profile</a>
+													</div>
+												</div>
+											</div>
+
+											<!-- clients 2 -->
+											<div class="client p-2 p-lg-4 mb-2 mb-lg-3">
+												<div class="row">
+													<div class="col-12 col-xl-9 d-flex">
+														<img src="img/advisor.png" alt="client" class="client-img rounded-circle pe-2 pe-lg-4">
+														<div class="client-content">
+															<h3 class="client-title">Esther Howard</h3>
+															<div class="client-meta  d-xl-flex">
+																<div class="client-meta-email pe-xxl-4 mb-1 mb-xl-0"><i class="fa-solid fa-envelope me-2"></i>mail.address@theserver.com</div>
+																<div class="client-meta-phone ps-xl-3 pe-xxl-4 mb-1 mb-xl-0"><i class="fa-solid fa-phone me-1"></i>098-7654321</div>
+																<div class="client-meta-location ps-xl-3 pe-xxl-4 mb-1 mb-xl-0"><i class="fa-solid fa-location-dot me-1"></i>Los Angeles</div>
+																<div class="client-meta-language ps-xl-3"><i class="fa-solid fa-earth-europe me-1"></i>ENG</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-12 col-xl-3 text-xl-end align-self-center mt-2 mt-sm-4 mt-xl-0">
+														<a href="#" class="btn-2">View Profile</a>
+													</div>
+												</div>
+											</div>
+
+											<!-- clients 3 -->
+											<div class="client p-2 p-lg-4">
+												<div class="row">
+													<div class="col-12 col-xl-9 d-flex">
+														<img src="img/advisor.png" alt="client" class="client-img rounded-circle pe-2 pe-lg-4">
+														<div class="client-content">
+															<h3 class="client-title">Esther Howard</h3>
+															<div class="client-meta  d-xl-flex">
+																<div class="client-meta-email pe-xxl-4 mb-1 mb-xl-0"><i class="fa-solid fa-envelope me-2"></i>mail.address@theserver.com</div>
+																<div class="client-meta-phone ps-xl-3 pe-xxl-4 mb-1 mb-xl-0"><i class="fa-solid fa-phone me-1"></i>098-7654321</div>
+																<div class="client-meta-location ps-xl-3 pe-xxl-4 mb-1 mb-xl-0"><i class="fa-solid fa-location-dot me-1"></i>Los Angeles</div>
+																<div class="client-meta-language ps-xl-3"><i class="fa-solid fa-earth-europe me-1"></i>ENG</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-12 col-xl-3 text-xl-end align-self-center mt-2 mt-sm-4 mt-xl-0">
+														<a href="#" class="btn-2">View Profile</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="py-5 my-lg-5 "></div>
+									</div>
+								</div>
+								<!-- add client content -->
+								<div class="tab-pane fade" id="pills-add-client" role="tabpanel" aria-labelledby="pills-add-client-tab">
+									<div class="container container-12 px-0 px-lg-2">
+										<h2 class="mb-2 mt-4 my-lg-5">Invite a New Client</h2>
+										<form class="p-3 p-lg-5">
+											<h3 class="mb-5 pb-4">Fill in the customer's email address to send a registration invitation</h3>
+											<div class="mb-3">
+												<label for="inputEmail" class="form-label">Email</label>
+												<input type="email" class="form-control" id="inputEmail" required>
+											</div>
+											<div class="text-end">
+												<button type="submit" class="btn mt-4">Send Invitation</button>
+											</div>
+										</form>
+									</div>
+									<div class="py-5 my-lg-5 "></div>
+								</div>
+							</div>
+
+						</div>
+						<!-- my plan content -->
+						<div class="tab-pane fade" id="v-pills-plan" role="tabpanel" aria-labelledby="v-pills-plan-tab">
+							<div class="container container-12 px-0 px-lg-2">
+								<h2 class="mb-2 mt-4 my-lg-5">My Plan</h2>
+								<div class="subscription-container p-3 py-lg-5 px-lg-4">
+									<h3 class="mb-5">Your subscription expires on 31.10.2022</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<div class="mt-4">
+										<button type="button" class="btn me-4 mb-4 mb-lg-0">Renew your plan</button>
+										<!-- Button trigger modal -->
+										<button type="button" class="btn-2 d-block d-lg-inline" data-bs-toggle="modal" data-bs-target="#cancelSubModal">Cancel Subscription</button>
+									</div>
+								</div>
+							</div>
+							<div class="py-5 my-lg-5 "></div>
+
+							<!-- Modal -->
+							<div class="modal fade" id="cancelSubModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-header border-0">
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body px-4">
+											<h3>Are you sure you want to cancel your plan?</h3>
+										</div>
+										<div class="modal-footer border-0 mt-lg-5 px-4 pb-5 d-flex justify-content-between">
+											<button type="button" class="btn" data-bs-dismiss="modal">No. Take me back</button>
+											<button type="button" class="btn-2">Yes. cancel my subscription</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- my profile content -->
+						<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+							<div class="container container-12 px-3 px-lg-2">
+								<h2 class="mb-2 pb-2 mt-4 my-lg-5">My Profile</h2>
+								<form class="">
+									<div class="row mb-4 form-top p-3 p-lg-5">
+										<div class="col-12 col-lg-5">
+											<label for="inputEmail2" class="form-label mb-1">Email</label>
+											<input type="email" class="form-control" id="inputEmail2" required>
+										</div>
+										<div class="col-12 col-lg-5">
+											<label for="inputPhone" class="form-label mb-1">Phone</label>
+											<input type="number" class="form-control" id="inputPhone" required>
+										</div>
+									</div>
+									
+									<div class="row mb-4 form-bottom p-3 p-lg-5">
+									
+									</div>
+									<div class="text-end">
+										<button type="submit" class="btn mt-4">Save</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- footer -->
+	<!--
+	<footer class="footer mt-negative-7">
+		<div class="container container-17">
+			<div class="row footer-top">
+				<div class="col-xl-4 col-md-6">
+					<span class="footer-list-title">Popular Features</span>
+					<div class="ul-container">
+						<ul class="footer-popular-features">
+							<li></li>
+							<li><a href="">Free Meeting Scheduler App</a></li>
+							<li><a href="">Social Media Tools</a></li>
+							<li><a href="">Email Tracking Software</a></li>
+							<li><a href="">Sales Email Automation</a></li>
+							<li><a href="">Ads Software</a></li>
+							<li><a href="">Email Marketing Software</a></li>
+							<li><a href="">Lead Management Software</a></li>
+							<li><a href="">Pipeline Management Tools</a></li>
+						</ul>
+						<ul>
+							<li><a href="">Sales Email Templates</a></li>
+							<li><a href="">Help Desk Software</a></li>
+							<li><a href="">Free Online Form Builder</a></li>
+							<li><a href="">Free Chatbot Builder</a></li>
+							<li><a href="">Free Live Chat Software</a></li>
+							<li><a href="">Marketing Analytics</a></li>
+							<li><a href="">Free Landing Page Builder</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-md-6">
+					<ul>
+						<li><span class="footer-list-title">Free Tools</span></li>
+						<li><a href="">Website Grader</a></li>
+						<li><a href="">Make My Persona</a></li>
+						<li><a href="">Email Signature Generator</a></li>
+						<li><a href="">Blog Ideas Generator</a></li>
+						<li><a href="">Invoice Template Generator</a></li>
+						<li><a href="">Marketing Plan Generator</a></li>
+						<li><a href="">Free Business Templates</a></li>
+						<li><a href="">Industry Benchmark Data</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-2 col-md-6">
+					<ul>
+						<li><span class="footer-list-title">Company</span></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Careers</a></li>
+						<li><a href="">Management Team</a></li>
+						<li><a href="">Board of Directors</a></li>
+						<li><a href="">Investor Relations</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-3 col-md-6">
+					<ul>
+						<li><span class="footer-list-title">Customers</span></li>
+						<li><a href="">Customer Support</a></li>
+						<li><a href="">Join a Local User Group</a></li>
+					</ul>
+					<ul class="footer-partners">
+						<li><span class="footer-list-title">Partners</span></li>
+						<li><a href="">Partners All Partner Programs</a></li>
+						<li><a href="">Solutions Partner Program</a></li>
+						<li><a href="">App Partner Program</a></li>
+						<li><a href="">HubSpot for Startups</a></li>
+						<li><a href="">Affiliate Program</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="social-media">
+				<a href=""><i class="fa-brands fa-facebook-f"></i></a>
+				<a href=""><i class="fa-brands fa-instagram"></i></a>
+				<a href=""><i class="fa-brands fa-youtube"></i></a>
+				<a href=""><i class="fa-brands fa-twitter"></i></a>
+				<a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+			</div>
+			<hr />
+			<div class="footer-logo">
+				<img src="img/logo.png" alt="" />
+			</div>
+		</div>
+	</footer>
+-->
+
+
+
+
+
+	<!--  Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body></html>
