@@ -1328,7 +1328,7 @@ input[type=range]:focus::-ms-fill-upper {
 .advisors-dashboard-section .tabs-content-container h3 {
 	color: black;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 @media (max-width: 600px) {
@@ -1348,11 +1348,13 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .advisors-dashboard-section .tabs-content-container input,
-.advisors-dashboard-section .tabs-content-container select {
+.advisors-dashboard-section .tabs-content-container select,
+.advisors-dashboard-section .tabs-content-container textarea {
 	border-radius: 10px;
 	border-color: #707070;
 	font-size: 18px;
 	font-weight: 600;
+	line-height: 24px;
 }
 
 /* my clients tab */
@@ -1451,6 +1453,7 @@ input[type=range]:focus::-ms-fill-upper {
 /* my play */
 .advisors-dashboard-section #v-pills-plan .subscription-container {
 	background-color: white;
+	border-radius: 10px;
 }
 
 .advisors-dashboard-section #v-pills-plan .subscription-container p {
@@ -1510,4 +1513,9 @@ input[type=range]:focus::-ms-fill-upper {
 
 .advisors-dashboard-section #v-pills-profile .custom-file-upload {
 	color: #963CFB;
+}
+
+
+.advisors-dashboard-section .tabs-content-container textarea {
+	font-weight: 400;
 }
