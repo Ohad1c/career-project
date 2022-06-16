@@ -72,6 +72,7 @@ body {
 	color: #963CFB;
 	padding: 10px 30px;
 	font-weight: 600;
+	display: inline-block;
 }
 
 .btn-2:hover {
@@ -941,10 +942,10 @@ header .custom-toggler.navbar-toggler-icon {
 	text-decoration: none;
 }
 
-#resultsModal .close {
+#resultsModal .btn-close {
 	color: #963CFB;
 	opacity: 1;
-	font-size: 35px;
+	font-size: 20px;
 	font-weight: 400;
 }
 
@@ -1483,9 +1484,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 /* my profile */
-.advisors-dashboard-section #v-pills-profile form {
-	
-}
+.advisors-dashboard-section #v-pills-profile form {}
 
 .advisors-dashboard-section #v-pills-profile .form-top,
 .advisors-dashboard-section #v-pills-profile .form-bottom {
@@ -1509,7 +1508,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .advisors-dashboard-section #v-pills-profile input[type="file"] {
-    display: none;
+	display: none;
 }
 
 .advisors-dashboard-section #v-pills-profile .custom-file-upload {
