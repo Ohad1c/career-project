@@ -1439,6 +1439,12 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
+.client .client-meta div {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  align-items: center;
+}
+
 @media (max-width: 1200px) {
   .client .btn-2 {
     margin-left: 100px;
