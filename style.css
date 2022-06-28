@@ -4,7 +4,7 @@ font-family: 'Playfair Display', serif;
 font-family: 'Work Sans', sans-serif;
 */
 
-/* base */
+/*** base ***/
 body {
   font-family: 'Playfair Display', serif;
   background-color: #FAFAFA;
@@ -28,7 +28,7 @@ body {
   }
 }
 
-/* utilities */
+/*** utilities ***/
 .primary-color {
   color: #963CFB;
 }
@@ -73,6 +73,7 @@ body {
   padding: 10px 30px;
   font-weight: 600;
   display: inline-block;
+  background-color: inherit;
 }
 
 .btn-2:hover {
@@ -181,6 +182,69 @@ body {
 .btn-close {
   background-image: url(img/icons/close.svg);
   opacity: 1;
+}
+
+/*** Components ***/
+/* accordion */
+.accordion > .accordion-item {
+  border-radius: 10px;
+  border: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.a5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion > .accordion-item > .accordion-header {
+  background-color: #FAFAFA;
+  border: 1px solid #D2D2D2;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  border: none;
+  color: #6E6E6E;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 1.3rem 1.25rem;
+}
+
+@media (max-width: 992px) {
+
+  .accordion-button,
+  .accordion-button:not(.collapsed) {
+    font-size: 16px;
+  }
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 992px) {
+  .accordion .card-header button::after {
+    top: 22px;
+  }
+}
+
+.accordion .accordion-body {
+  background-color: #FAFAFA;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.accordion label {
+  font-size: 20px;
+  color: #0F0619;
+}
+
+@media (max-width: 992px) {
+  .accordion label {
+    font-size: 16px;
+  }
 }
 
 /* navbar */
@@ -757,7 +821,6 @@ header .custom-toggler.navbar-toggler-icon {
 .skills-section {
   font-family: 'Work Sans', sans-serif;
   background-color: #F5F5F5;
-  /*  padding-bottom: 100px;*/
 }
 
 @media (max-width: 1200px) {
@@ -781,52 +844,9 @@ header .custom-toggler.navbar-toggler-icon {
 @media (max-width: 992px) {
 
   .skills-section .instructions,
-  .skills-section .accordion h2 button,
-  .skills-section .accordion label,
   .skills-section .btn {
     font-size: 16px;
   }
-}
-
-.skills-section .accordion > .accordion-item {
-  border-radius: 10px;
-  border: none;
-}
-
-.accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-
-.skills-section .accordion > .accordion-item > .accordion-header {
-  background-color: #FAFAFA;
-  border: 1px solid #D2D2D2;
-  border-radius: 10px;
-  margin-bottom: 0;
-}
-
-.skills-section .accordion h2 button {
-  border: none;
-  color: #6E6E6E;
-  font-size: 24px;
-  font-weight: bold;
-  background-color: transparent;
-  padding: 1.3rem 1.25rem;
-}
-
-.accordion-button:focus {
-  box-shadow: none;
-}
-
-@media (max-width: 992px) {
-  .accordion .card-header button::after {
-    top: 22px;
-  }
-}
-
-.skills-section .accordion .accordion-body {
-  background-color: #FAFAFA;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .skills-section .accordion .form-group div {
@@ -834,10 +854,6 @@ header .custom-toggler.navbar-toggler-icon {
   grid-template-columns: 1fr max-content;
 }
 
-.skills-section .accordion label {
-  font-size: 20px;
-  color: #0F0619;
-}
 
 .skills-section .accordion .card-body span {
   color: #9F9F9F;
@@ -872,12 +888,13 @@ header .custom-toggler.navbar-toggler-icon {
   background-color: transparent;
 }
 
-.skills-section .occupations-container .form-group i {
+.skills-section .occupations-container .form-group .search-icon {
   position: absolute;
   top: 15px;
   left: 13px;
   font-size: 19px;
   color: #343434;
+  height: 18px;
 }
 
 .skills-section .occupations-container h3 {
@@ -1297,27 +1314,26 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 /* general styles */
-.advisors-dashboard-section .tabs-content-container .btn {
+.advisors-dashboard-section .btn {
   font-size: 18px;
   padding: 7px 25px;
   border: 2px solid #963CFB;
 }
 
 @media (max-width: 600px) {
-  .advisors-dashboard-section .tabs-content-container .btn {
+  .advisors-dashboard-section .btn {
     font-size: 12px;
     padding: 7px 18px;
   }
 }
 
-.advisors-dashboard-section .tabs-content-container .btn-2 {
+.advisors-dashboard-section .btn-2 {
   font-size: 18px;
   padding: 7px 18px;
-  background-color: inherit;
 }
 
 @media (max-width: 600px) {
-  .advisors-dashboard-section .tabs-content-container .btn-2 {
+  .advisors-dashboard-section .btn-2 {
     font-size: 12px;
   }
 }
@@ -1354,8 +1370,7 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 24px;
 }
 
-/* my clients tab */
-.advisors-dashboard-section #v-pills-clients .nav-pills .nav-link {
+.advisors-dashboard-section .custome-nav-pills .nav-link {
   color: rgba(0, 0, 0, 0.5);
   font-weight: 500;
   font-size: 18px;
@@ -1363,13 +1378,13 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 @media (max-width: 600px) {
-  .advisors-dashboard-section #v-pills-clients .nav-pills .nav-link {
+  .advisors-dashboard-section .custome-nav-pills .nav-link {
     font-size: 16px;
     padding: 4px 19px;
   }
 }
 
-.advisors-dashboard-section #v-pills-clients .nav-pills .nav-link.active {
+.advisors-dashboard-section .custome-nav-pills .nav-link.active {
   background: white;
   box-shadow: 0px 6px 16px #00000014;
   border-radius: 23px;
@@ -1377,6 +1392,40 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: 600;
 }
 
+.advisors-dashboard-section .modal-heading-3 {
+  font-size: 24px;
+  color: black;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .advisors-dashboard-section .modal-heading-3 {
+    font-size: 14px;
+  }
+}
+
+.advisors-dashboard-section .note {
+  color: #6E6E6E;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .advisors-dashboard-section .note {
+    font-size: 12px;
+  }
+}
+
+.advisors-dashboard-section .modal-content {
+  border: 1px solid #707070;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.advisors-dashboard-section .modal-footer {
+  border-top: 2px solid rgba(112, 112, 112, 0.5);
+}
+
+/* my clients tab */
 .advisors-dashboard-section h2 {
   color: #6E6E6E;
   font-weight: bold;
@@ -1445,6 +1494,84 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
+/* view profile modal */
+#viewProfileModal .modal-content {}
+
+@media (min-width: 576px) {
+  #viewProfileModal .modal-dialog {
+    max-width: 1200px;
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #viewProfileModal .modal-dialog {
+    margin-right: 10%;
+  }
+}
+
+#viewProfileModal .modal-header {
+  position: absolute;
+  right: 10px;
+  z-index: 1;
+}
+
+.custome-nav-pills-sidebar {
+  background-color: #F5F5F5;
+  height: 100%;
+}
+
+.custome-nav-pills-sidebar .nav-link.active {
+  background-color: transparent;
+}
+
+.custome-nav-pills-sidebar .nav-link.active path {
+  fill: #8710A0;
+}
+
+#viewProfileModal .accordion .accordion-body {
+  background-color: inherit;
+}
+
+.accordion-rating-history {
+  font-size: 20px;
+  color: #515151;
+}
+
+@media (max-width: 992px) {
+  .accordion-rating-history {
+    font-size: 14px;
+  }
+}
+
+.accordion-rating-history-right {
+  border-left: 2px solid rgba(112, 112, 112, 0.5);
+}
+
+@media (max-width: 992px) {
+  .accordion-rating-history-right {
+    border-left: none;
+    border-top: 2px solid rgba(112, 112, 112, 0.3);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* add new client */
 .advisors-dashboard-section #pills-add-client form {
   background-color: white;
@@ -1463,19 +1590,10 @@ input[type=range]:focus::-ms-fill-upper {
   max-width: 772px;
 }
 
-.advisors-dashboard-section #v-pills-plan .modal-content {
-  border: 1px solid #707070;
-  border-radius: 10px;
-  box-shadow: 0px 3px 6px #00000029;
-}
 
 @media (min-width: 576px) {
   .advisors-dashboard-section #v-pills-plan .modal-dialog {
     max-width: 617px;
-  }
-
-  .advisors-dashboard-section #v-pills-plan .modal-dialog h3 {
-    font-size: 24px;
   }
 }
 

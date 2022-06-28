@@ -55,12 +55,11 @@
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-2 col-xl-2 px-0 pt-0 py-xl-4 side-menu">
+        <div class="col-2 px-0 pt-0 py-xl-4 side-menu">
           <div class="">
             <p class="menu-title ps-4 mb-4 pt-xl-2 d-none d-xl-block">Menu</p>
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <button class="nav-link active mb-2 pt-4 px-0 pb-0 ps-xl-4 py-xl-4
-						align-self-center align-self-xl-start align-items-center" id="v-pills-clients-tab" data-bs-toggle="pill" data-bs-target="#v-pills-clients" type="button" role="tab" aria-controls="v-pills-clients" aria-selected="true">
+              <button class="nav-link active mb-2 pt-4 px-0 pb-0 ps-xl-4 py-xl-4 align-self-center align-self-xl-start align-items-center" id="v-pills-clients-tab" data-bs-toggle="pill" data-bs-target="#v-pills-clients" type="button" role="tab" aria-controls="v-pills-clients" aria-selected="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="30.13" viewBox="0 0 36 30.13">
                   <g id="Icon_feather-users" data-name="Icon feather-users" transform="translate(0 -2.87)">
                     <path id="Path_15" data-name="Path 15" d="M25.5,31.5v-3a6,6,0,0,0-6-6H7.5a6,6,0,0,0-6,6v3" fill="none" stroke="#8f8f8f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
@@ -89,12 +88,12 @@
           </div>
 
         </div>
-        <div class="col-10 col-xl-10 px-3 py-4 py-lg-4 mt-lg-2 tabs-content-container">
+        <div class="col-10 px-3 py-4 py-lg-4 mt-lg-2 tabs-content-container">
           <div class="tab-content" id="v-pills-tabContent">
             <!-- my clients tab -->
             <div class="tab-pane fade show active" id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-clients-tab">
               <!-- top tab menu -->
-              <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+              <ul class="nav nav-pills mb-3 d-flex justify-content-center custome-nav-pills" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="pills-clients-list-tab" data-bs-toggle="pill" data-bs-target="#pills-clients-list" type="button" role="tab" aria-controls="pills-clients-list" aria-selected="true">Client List</button>
                 </li>
@@ -108,7 +107,7 @@
                   <div class="container container-12 px-0 px-lg-2">
                     <h2 class="my-5 d-none d-md-block">My Clients</h2>
                     <div class="my-clients-container">
-                     
+
                       <!-- clients 1 -->
                       <div class="client p-2 p-lg-4 mb-2 mb-lg-3">
                         <div class="row">
@@ -126,7 +125,7 @@
                             </div>
                           </div>
                           <div class="col-12 col-xl-3 text-xl-end align-self-center mt-2 mt-sm-4 mt-xl-0">
-                            <a href="#" class="btn-2 mb-1 mb-xl-0">View Profile</a>
+                            <a href="#" class="btn-2 mb-1 mb-xl-0" data-bs-toggle="modal" data-bs-target="#viewProfileModal">View Profile</a>
                           </div>
                         </div>
                       </div>
@@ -150,7 +149,7 @@
                             </div>
                           </div>
                           <div class="col-12 col-xl-3 text-xl-end align-self-center mt-2 mt-sm-4 mt-xl-0">
-                            <a href="#" class="btn-2 mb-1 mb-xl-0">View Profile</a>
+                            <a href="#" class="btn-2 mb-1 mb-xl-0" data-bs-toggle="modal" data-bs-target="#viewProfileModal">View Profile</a>
                           </div>
                         </div>
                       </div>
@@ -174,13 +173,13 @@
                             </div>
                           </div>
                           <div class="col-12 col-xl-3 text-xl-end align-self-center mt-2 mt-sm-4 mt-xl-0">
-                            <a href="#" class="btn-2 mb-1 mb-xl-0">View Profile</a>
+                            <a href="#" class="btn-2 mb-1 mb-xl-0" data-bs-toggle="modal" data-bs-target="#viewProfileModal">View Profile</a>
                           </div>
                         </div>
                       </div>
-
                     </div>
                     <div class="py-5 my-lg-5 "></div>
+
                   </div>
                 </div>
                 <!-- add client content -->
@@ -209,7 +208,7 @@
                 <div class="mt-2 py-3 d-none d-lg-block"></div>
                 <h2 class="mb-3 my-lg-5">My Plan</h2>
                 <div class="subscription-container p-3 py-lg-5 px-lg-4">
-                  <h3 class="mb-5">Your subscription expires on 31.10.2022</h3>
+                  <h3 class="mb-5 modal-heading-3">Your subscription expires on 31.10.2022</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <div class="mt-4">
                     <button type="button" class="btn me-4 mb-4 mb-lg-0">Renew your plan</button>
@@ -220,15 +219,15 @@
               </div>
               <div class="py-5 my-lg-5 "></div>
 
-              <!-- Modal -->
-              <div class="modal fade" id="cancelSubModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <!-- Modal cancel sub -->
+              <div class="modal fade" id="cancelSubModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header border-0">
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body px-4">
-                      <h3>Are you sure you want to cancel your plan?</h3>
+                      <h4 class="modal-heading-3">Are you sure you want to cancel your plan?</h4>
                     </div>
                     <div class="modal-footer border-0 mt-lg-5 px-4 pb-5 d-flex justify-content-between">
                       <button type="button" class="btn" data-bs-dismiss="modal">No. Take me back</button>
@@ -248,28 +247,23 @@
                   <div class="row mb-4 mb-lg-5 form-top py-3 p-lg-5">
                     <div class="col-12 col-lg-5 mb-4">
                       <label for="firstName" class="form-label mb-1">First Name</label>
-                      <input type="text" class="form-control py-2 py-lg-3
-											" id="firstName" required>
+                      <input type="text" class="form-control py-2 py-lg-3" id="firstName" required>
                     </div>
                     <div class="col-12 col-lg-5 mb-4">
                       <label for="lastName" class="form-label mb-1">Last Name</label>
-                      <input type="text" class="form-control py-2 py-lg-3
-											" id="lastName" required>
+                      <input type="text" class="form-control py-2 py-lg-3" id="lastName" required>
                     </div>
                     <div class="col-12 col-lg-5 mb-4">
                       <label for="inputEmail2" class="form-label mb-1">Email</label>
-                      <input type="email" class="form-control py-2 py-lg-3
-											" id="inputEmail2" required>
+                      <input type="email" class="form-control py-2 py-lg-3" id="inputEmail2" required>
                     </div>
                     <div class="col-12 col-lg-5 mb-4">
                       <label for="inputPhone" class="form-label mb-1">Phone</label>
-                      <input type="number" class="form-control py-2 py-lg-3
-											" id="inputPhone" required>
+                      <input type="number" class="form-control py-2 py-lg-3" id="inputPhone" required>
                     </div>
                     <div class="col-12 col-lg-4 mb-4">
                       <label for="country" class="form-label mb-1">Country</label>
-                      <select class="form-select py-2 py-lg-3
-											" aria-label="Default select example" id="country" required>
+                      <select class="form-select py-2 py-lg-3" aria-label="Default select" id="country" required>
                         <option selected></option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -278,14 +272,12 @@
                     </div>
                     <div class="col-12 col-lg-4 mb-4">
                       <label for="city" class="form-label mb-1">City</label>
-                      <input type="text" class="form-control py-2 py-lg-3
-											" id="city" required>
+                      <input type="text" class="form-control py-2 py-lg-3" id="city" required>
                     </div>
 
                     <div class="col-12 col-lg-2 mb-4">
                       <label for="hourlyRate" class="form-label mb-1">Hourly Rate</label>
-                      <input type="text" class="form-control py-2 py-lg-3
-											" id="hourlyRate" required>
+                      <input type="text" class="form-control py-2 py-lg-3" id="hourlyRate" required>
                     </div>
                   </div>
 
@@ -317,6 +309,164 @@
         </div>
       </div>
     </div>
+
+
+
+
+    <!-- Modal view profile -->
+    <div class="modal fade" id="viewProfileModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0 ">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0 pe-4 p-lg-4">
+            <!-- tab menu -->
+            <ul class="nav nav-pills mb-3 custome-nav-pills d-lg-flex justify-content-center d-none d-lg-block" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Notes</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Rating History</button>
+              </li>
+            </ul>
+
+            <div class="row">
+              <div class="col-2 d-lg-none">
+                <!-- tab menu -->
+                <ul class="nav nav-pills mb-3 d-flex flex-column custome-nav-pills-sidebar py-2 " id="pills-tab" role="tablist">
+                  <li class="nav-item w-100" role="presentation">
+                    <button class="nav-link active mx-auto px-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22.337" height="22.337" viewBox="0 0 22.337 22.337">
+                        <path id="Icon_material-speaker-notes" data-name="Icon material-speaker-notes" d="M23.1,3H5.234A2.231,2.231,0,0,0,3.011,5.234L3,25.337,7.467,20.87H23.1a2.24,2.24,0,0,0,2.234-2.234V5.234A2.24,2.24,0,0,0,23.1,3ZM9.7,16.4H7.467V14.168H9.7Zm0-3.351H7.467V10.818H9.7ZM9.7,9.7H7.467V7.467H9.7Zm7.818,6.7H11.935V14.168h5.584Zm3.351-3.351H11.935V10.818H20.87Zm0-3.351H11.935V7.467H20.87Z" transform="translate(-3 -3)" fill="#ababab" />
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="nav-item w-100" role="presentation">
+                    <button class="nav-link mx-auto px-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25.058" height="21.479" viewBox="0 0 25.058 21.479">
+                        <path id="Icon_material-history" data-name="Icon material-history" d="M15.819,4.5A10.74,10.74,0,0,0,5.08,15.239H1.5l4.642,4.642.084.167,4.821-4.809H7.466a8.393,8.393,0,1,1,2.458,5.895L8.23,22.828A10.736,10.736,0,1,0,15.819,4.5Zm-1.193,5.966v5.966l5.107,3.031.859-1.444-4.176-2.482V10.466Z" transform="translate(-1.5 -4.5)" fill="#ababab" />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-10 col-lg-12 py-3 py-lg-0">
+                <!-- tabs content -->
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- notes content -->
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <form action="">
+                      <label for="addNote" class="form-label mb-1">Add a new note</label>
+                      <textarea class="form-control p-3" id="addNote" rows="7"></textarea>
+                      <div class="text-end">
+                        <button type="submit" class="btn mt-4">Submit</button>
+                      </div>
+                    </form>
+                    <h3 class="modal-heading-3">Notes History</h3>
+                    <!-- note 1 -->
+                    <div class="row note mb-5">
+                      <div class="col-12 col-lg-1">
+                        <div class="note-date">25.06.2022 15:40</div>
+                      </div>
+                      <div class="col-12 col-lg-11">
+                        <div class="note-details ps-lg-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                      </div>
+                    </div>
+
+                    <!-- note 2 -->
+                    <div class="row note mb-5">
+                      <div class="col-12 col-lg-1">
+                        <div class="note-date">25.06.2022 15:15</div>
+                      </div>
+                      <div class="col-12 col-lg-11">
+                        <div class="note-details ps-lg-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet <br><br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- rating history content -->
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <h3 class="modal-heading-3 mb-3">Rating History</h3>
+                    <div class="accordion" id="ratingHistoryAccordion">
+                      <!-- accordion item 1 -->
+                      <div class="accordion-item mb-2">
+                        <div class="accordion-header" id="headingOne">
+                          <h2 class="mb-0">
+                            <button class="accordion-button btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              25.06.2022 - 18:36
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseOne" class="accordion-collapse collapse mb-5" aria-labelledby="headingOne" data-bs-parent="#skillsAccordion">
+                          <div class="accordion-body">
+
+                            <div class="row accordion-rating-history">
+                              <div class="col-12 col-lg-6 accordion-rating-history-left pt-3">
+                                <p class="d-flex justify-content-between">Getting Information<span class="ps-3">5</span></p>
+                                <p class="d-flex justify-content-between">Monitor Processes Materials Or Surroundings<span class="ps-3">1</span></p>
+                                <p class="d-flex justify-content-between">Identifying Objects Actions And Events<span class="ps-3">5</span></p>
+                              </div>
+                              <div class="col-lg-2"></div>
+                              <div class="col-12 col-lg-4 accordion-rating-history-right pt-3 ps-lg-4">
+                                <p><span class="bold me-3">95%</span>Fallers</p>
+                                <p><span class="bold me-3">94%</span>Timing Device Assembler</p>
+                                <p><span class="bold me-3">91%</span>Adjusters</p>
+                                <div class="text-end mt-lg-4 pt-2">
+                                  <button type="button" class="btn">Try Again Now</button>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- accordion item 2 -->
+                      <div class="accordion-item mb-2">
+                        <div class="accordion-header" id="headingTwo">
+                          <h2 class="mb-0">
+                            <button class="accordion-button btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              25.06.2022 - 18:31
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#skillsAccordion">
+                          <div class="accordion-body">
+                            Some placeholder content for the second accordion panel. This panel is hidden by default.
+                          </div>
+                        </div>
+                      </div>
+                      <!-- accordion item 3 -->
+                      <div class="accordion-item mb-2">
+                        <div class="accordion-header" id="headingThree">
+                          <h2 class="mb-0">
+                            <button class="accordion-button btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              25.06.2022 - 09:10
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#skillsAccordion">
+                          <div class="accordion-body">
+                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-3 m-lg-5 p-lg-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="modal-footer px-4 d-flex justify-content-right">
+            <button type="button" class="btn-2" data-bs-dismiss="modal">Close popup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
 
@@ -400,6 +550,8 @@
       </div>
     </div>
   </footer>
+
+
 
 
 
