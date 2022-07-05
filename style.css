@@ -33,6 +33,14 @@ body {
   color: #963CFB;
 }
 
+.red {
+  color: #F91B1B;
+}
+
+.green {
+  color: #35A868;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -855,7 +863,7 @@ header .custom-toggler.navbar-toggler-icon {
 }
 
 
-.skills-section .accordion .card-body span {
+.skills-section .accordion .accordion-body span {
   color: #9F9F9F;
 }
 
@@ -979,7 +987,220 @@ header .custom-toggler.navbar-toggler-icon {
 }
 
 
-/* range input styles */
+
+
+
+
+
+
+
+
+.form-container {}
+
+@media (max-width: 1200px) {
+  .skills-section__right {
+    min-height: initial;
+  }
+}
+
+.rates-results {
+  font-size: 24px;
+  background-color: white;
+  box-shadow: -3px 3px 6px #00000029;
+  border-radius: 10px;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .rates-results {
+    width: 110%;
+    margin-left: -10%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .rates-results ul,
+  .rates-results h4 {
+    font-size: 16px;
+  }
+}
+
+.rates-results .arrow-close {
+  height: 32px;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.rates-results .arrow-close path {
+  fill: #963CFB;
+}
+
+.rates-results .btn-close {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+@media (max-width: 600px) {
+  .rates-results .btn-close {
+    position: static;
+    margin-left: auto;
+    font-size: 15px;
+    margin-bottom: 15px
+  }
+}
+
+.rates-results .rates-results-list {
+  list-style: none;
+  padding-left: 0;
+  max-width: 390px;
+}
+
+@media (max-width: 600px) {
+  .rates-results .rates-results-list {
+    max-width: 280px;
+  }
+}
+
+.rates-results-list span {
+  width: 30px;
+  text-align: left;
+}
+
+/*
+
+@media (min-width: 576px) {
+  #ratesResultsModal .modal-dialog {
+    max-width: 743px;
+  }
+}
+
+@media (max-width: 600px) {
+  #ratesResultsModal .modal-dialog {
+    font-size: 16px;
+  }
+}
+
+#ratesResultsModal .modal-header {
+  position: absolute;
+  right: 7px;
+  top: 19px;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  #ratesResultsModal .modal-header {
+    position: static;
+  }
+}
+
+@media (min-width: 992px) {
+  #ratesResultsModal .btn-close {
+    background-image: none;
+  }
+
+  #ratesResultsModal .btn-close path {
+    fill: #963CFB;
+  }
+}
+
+@media (max-width: 600px) {
+  #ratesResultsModal h4 {
+    font-size: 16px;
+  }
+}
+
+#ratesResultsModal .rates-results .rates-results-list {
+  list-style: none;
+  padding-left: 0;
+  max-width: 390px;
+}
+
+@media (max-width: 600px) {
+  #ratesResultsModal .rates-results .rates-results-list {
+    max-width: 280px;
+  }
+}
+
+.rates-results .rates-results-list span {
+  width: 30px;
+  text-align: left;
+}
+
+
+*/
+
+
+
+
+
+
+.form-control-range {
+ -webkit-appearance: none;
+  width: 100%;
+  height: 18px;
+  background: #F0F0F0;
+  border: 1px solid #CFCFCF;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+  cursor: pointer;
+} 
+
+.form-control-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #CFCFCF;
+}
+
+.form-control-range::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  cursor: pointer;
+  border: 1px solid #CFCFCF;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 4px #000000;
+  border: 6px solid #FFFFFF;
+  height: 26px;
+  width: 26px;
+  border-radius: 33px;
+  background-color: rgba(53,168,104, 0.9);
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.word-output {
+  position: absolute;
+  top: 60px;
+/*  transform: translateX(-46%);*/
+  transform: translateX(-70%);
+  width: max-content;
+  color: #9F9F9F;
+}
+
+
+
+
+
+
+
+
+/* range input styles 
 input[type=range] {
   height: 41px;
   -webkit-appearance: none;
@@ -1033,6 +1254,7 @@ input[type=range]::-moz-range-thumb {
   box-shadow: 3px 3px 6px #000000;
   border: 6px solid #FFFFFF;
   height: 26px;
+/*
   width: 26px;
   border-radius: 33px;
   background: #07D413;
@@ -1081,6 +1303,7 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #07D413;
 }
+*/
 
 /***** advisor page *****/
 .advisors-section {
