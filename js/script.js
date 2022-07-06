@@ -1,12 +1,20 @@
 function changeSliderStyle(event) {
   var slider = event.target;
   var output = event.target.nextElementSibling;
+  var x = slider.value;
   
-  console.log(slider);
-  console.log(output);
+  // change input value span
+  const scores = [" ", "Very poor", "Below average", "Acceptable", "Good", "Very good"];
+  output.innerHTML = scores[x];
+
+  // change input span location
+  const min = slider.min ? slider.min : 0;
+  const max = slider.max ? slider.max : 100;
+  const newVal = Number(((x - min) * 100) / (max - min));
+  output.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+  
   
   // change slider background color
-  var x = slider.value;
   var backgroundPrecentage = (100 / 5) * x;
   
   switch (true) {
@@ -27,20 +35,13 @@ function changeSliderStyle(event) {
       break;
     case (x == 5):
       var color = 'linear-gradient(90deg, rgb(53, 168, 104)' + backgroundPrecentage + '%, rgb(240,240,240)' + backgroundPrecentage + '%)';
+      output.style.left = "88%";
       break;
   }
   
   slider.style.background = color;
   
   
-  // change input value span
-  const scores = [" ", "Very poor", "Below average", "Acceptable", "Good", "Very good"];
-  output.innerHTML = scores[x];
-
-  // change input span location
-  const min = slider.min ? slider.min : 0;
-  const max = slider.max ? slider.max : 100;
-  const newVal = Number(((x - min) * 100) / (max - min));
-  output.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+  
   
 }
